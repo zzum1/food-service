@@ -1,8 +1,7 @@
-# .gitignore
-node_modules/
+node_modules
+# Keep environment variables out of version control
 .env
-*.log
-dist/
-build/
-.DS_Store
-prisma/migrations/
+# Prisma
+.prisma/client/
+node_modules/.prisma/
+prisma/generated/
