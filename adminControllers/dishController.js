@@ -61,13 +61,6 @@ const deleteDish = async (req, res) => {
     if (!dishById) {
       return res.status(404).json({ message: "Dish not found!" });
     }
-    // // Istriname susijusius irasus su menuId
-
-    // await prisma.menu.deleteMany({
-    //   where: {
-    //     menuId: parseInt(id),
-    //   },
-    // });
 
     const deletedDish = await prisma.dish.delete({
       where: {
